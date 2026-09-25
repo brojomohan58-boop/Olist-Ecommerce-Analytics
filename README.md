@@ -176,20 +176,17 @@ analytical use case.
 
 ------------------------------------------------------------------------
 
-# 📂 Project Structure
+## 📁 Repository Structure
 
-``` text
+```text
 Olist-Ecommerce-Analytics/
 │
-├── app.py
-├── requirements.txt
-├── README.md
-│
-├── data/
+├── 📁 01_data/
 │   ├── olist_master_cleaned.csv
-│   └── olist_order_item_master.csv
+│   ├── olist_order_item_master.csv
+│   └── ml_delay_dataset.csv
 │
-├── pages/
+├── 📁 02_pages/
 │   ├── 01_overview.py
 │   ├── 02_products_categories.py
 │   ├── 03_delivery_operations.py
@@ -199,26 +196,41 @@ Olist-Ecommerce-Analytics/
 │   ├── 07_sellers.py
 │   └── 08_ml_delay_predictor.py
 │
-├── src/
+├── 📁 03_src/
 │   ├── data_loader.py
 │   ├── filters.py
 │   ├── kpis.py
 │   ├── charts.py
 │   └── ml_module.py
 │
-├── _validate_app.py
-├── _validate_charts.py
-├── _validate_customer.py
-├── _validate_delivery.py
-├── _validate_filters.py
-├── _validate_kpis.py
-├── _validate_loader.py
-├── _validate_overview.py
-├── _validate_payments.py
-├── _validate_products.py
-└── _validate_regional.py
+├── 📁 04_validation/
+│   ├── _validate_app.py
+│   ├── _validate_charts.py
+│   ├── _validate_customer.py
+│   ├── _validate_delivery.py
+│   ├── _validate_filters.py
+│   ├── _validate_kpis.py
+│   ├── _validate_loader.py
+│   ├── _validate_overview.py
+│   ├── _validate_payments.py
+│   ├── _validate_products.py
+│   └── _validate_regional.py
+│
+├── 📁 05_notebook/
+│   ├── BrojoMohanDutta_Olist_Ecommerce_Analytics_AICTE_IBM.ipynb
+│   └── [additional notebook/source file]
+│
+├── 📁 06_documentation/
+│   ├── BrojoMohanDutta_Olist_Ecommerce_Analytics_AICTE_IBM_Report.docx
+│   └── [additional documentation file]
+│
+├── 📄 app.py
+├── 📄 requirements.txt
+├── 📄 README.md
+├── 📄 _inventory.py
+├── 📄 .gitignore
+└── 📄 .gitattributes
 ```
-
 ------------------------------------------------------------------------
 
 # 📈 Dashboard Pages
